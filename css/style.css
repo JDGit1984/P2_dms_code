@@ -228,7 +228,7 @@ article{
     height: 664px;
 }
 
-#hebergement > div{
+.hotels, .popular{
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 20px 3%;
@@ -238,6 +238,8 @@ article{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
+    height: 480px;
 }
 
 .hotels{
@@ -246,7 +248,6 @@ article{
 
 .hotels .card{
     width: 31%;
-    margin-bottom: 20px;
 }
 
 .hotels .card img{
@@ -261,7 +262,7 @@ article{
 }
 
 .hotels > h3{
-    padding-top: 16px;
+    padding-top: 36px;
 }
 
 /* Partie "Les plus populaires" */
@@ -270,11 +271,17 @@ article{
     width: 31%;
 }
 
+.popular .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .popular .list{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 556px;
+    height: 540px;
 }
 
 .popular .card{
@@ -346,6 +353,10 @@ footer div{
     width: 33%;
 }
 
+footer h3{
+    margin-top: 20px;
+}
+
 footer ul{
     list-style: none;
     padding-left: 0px;
@@ -355,13 +366,117 @@ footer ul li a:hover{
     color: #0065FC;
 }
 
+li{
+    margin-bottom: 12px;
+}
+
 @media screen and (max-width: 768px){
+
+    #hebergement, #activity{
+        margin-bottom: 32px;
+    }
+
+    /* Header */
 
     header{
         display: block;
+        justify-content: center;
+        padding: 0;
     }
+
+    header img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+    }
+
+    header a{
+        width: 50%;
+        height: 80px;
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    header a:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC
+    }
+
+    /* Ligne recherche */
+
+    .recherche{
+        justify-content: center;
+    }
+    .rechercher{
+        display: none;
+    }
+
+    .search_mobile{
+        display: inline;
+    }
+
+    /* Partie hébergements */
 
     #hebergement{
         flex-direction: column-reverse;
+        height: auto;
+        padding: 0;
+    }
+
+    .hotels, .popular{
+        width: 100%;
+        border-radius: 0;
+        padding: 20px 6%;
+    }
+
+    .hotels{
+        background-color: white;
+    }
+
+    .hotels .list{
+        flex-flow: column nowrap;
+        height: auto;
+    }
+
+    .hotels .card{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .hotels > h3{
+        padding-top: 20px;
+    }
+
+    .popular .list{
+        height: auto;
+    }
+
+    .popular .card{
+        margin-bottom: 24px;
+    }
+
+    #activity .list{
+        height: auto;
+        flex-flow: column nowrap;
+    }
+
+    #activity .card{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .minor, .major, .focus{
+        height: 166px;
+    }
+
+    /* Footer */
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer div{
+        width: 100%;
     }
 }

@@ -200,6 +200,7 @@ i.fas.fa-info{
 }
 
 .info{
+    display: flex;
     margin: 36px 0;
 }
 
@@ -370,6 +371,126 @@ li{
     margin-bottom: 12px;
 }
 
+/* Version tablette */
+
+@media screen and (max-width: 992px) and (min-width: 769px){
+
+    #hebergement{
+        padding: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .hotels{
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .hotels .list{
+        height: auto;
+    }
+
+    .hotels .card{
+        margin-bottom: 24px;
+    }
+
+    .hotels article{
+        height: 104px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hotels .stars{
+        margin-bottom: 8px;
+    }
+
+    .hotels > h3{
+        padding-top: 16px;
+    }
+
+    .popular{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .popular .list{
+        flex-direction: row;
+        padding-bottom: 0;
+        height: 240px;
+    }
+
+    .popular .card{
+        width: 30%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .popular .card img{
+        width: 100%;
+        height: 138px;
+        min-height: auto;
+        padding: 3%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .popular article{
+        padding: 0 8%;
+    }
+
+    #activity .list{
+        height: 520px;
+        padding: 20px 0;
+        background-color: #F2F2F2;
+    }
+
+    #activity .list:nth-child(1){
+        order: -1;
+    }
+
+    #activity .list :nth-child(4){
+        order:-1;
+    }
+
+    #activity .list :nth-child(3){
+        order: 1;
+    }
+
+    #activity .list :nth-child(2){
+        order: 0;
+    }
+
+    #activity .list :nth-child(5){
+        order: 1;
+    }
+
+    #activity .list :nth-child(6){
+        order: 0;
+    }
+
+    #activity .card{
+        width: 30%;
+    }
+
+    .minor.activ_card{
+        width: 30%;
+    }
+
+    .focus, .major, .minor{
+        height: 140px;
+    }
+
+    #activity h3{
+        line-height: normal;
+    }
+}
+
+/* Version mobile */
+
 @media screen and (max-width: 768px){
 
     #hebergement, #activity{
@@ -414,6 +535,12 @@ li{
 
     .search_mobile{
         display: inline;
+    }
+
+    /* Filtres */
+
+    .filter_block{
+        margin-bottom: 16px;
     }
 
     /* Partie hébergements */

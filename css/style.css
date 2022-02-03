@@ -443,9 +443,7 @@ li{
     }
 
     #activity .list{
-        height: 520px;
-        padding: 20px 0;
-        background-color: #F2F2F2;
+        height: 480px;
     }
 
     #activity .list:nth-child(1){

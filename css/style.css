@@ -38,7 +38,7 @@ p{
     transition-duration: 200ms;
 }
 
-#hebergement, #activity{
+.hebergement, #activity{
     margin-bottom: 64px;
 }
 
@@ -126,7 +126,7 @@ i.fas.fa-map-marker-alt {
     position: relative;
     left: -6px;
     height: 51px;
-    width: 200px;
+    width: 62%;
     padding: 0 16px;
     align-items: center;
     border: 0 1px; 
@@ -223,19 +223,19 @@ article{
 
 /* Partie hébergements */
 
-#hebergement{
+.hebergement{
     display: flex;
     justify-content: space-between;
     height: 664px;
 }
 
-.hotels, .popular{
+#hotels, .popular{
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 20px 3%;
 }
 
-.hotels .list{
+#hotels .list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -243,26 +243,26 @@ article{
     height: 480px;
 }
 
-.hotels{
+#hotels{
     width: 65%;
 }
 
-.hotels .card{
+#hotels .card{
     width: 31%;
 }
 
-.hotels .card img{
+#hotels .card img{
     width: 100%;
     height: 140px;
     border-radius: 20px 20px 0 0;
     padding: 6px;
 }
 
-.hotels article{
+#hotels article{
     padding: 4px 8%;
 }
 
-.hotels > h3{
+#hotels > h3{
     padding-top: 36px;
 }
 
@@ -334,8 +334,11 @@ article{
     height: 200px;
 }
 
-#activity h3{
+#activity article{
     height: 56px;
+}
+
+#activity h3{
     margin-top: 0;
     vertical-align: middle;
     line-height: 56px;
@@ -375,39 +378,39 @@ li{
 
 @media screen and (max-width: 992px) and (min-width: 769px){
 
-    #hebergement{
+    .hebergement{
         padding: 0;
         height: auto;
         flex-direction: column;
     }
 
-    .hotels{
+    #hotels{
         background-color: transparent;
         width: 100%;
         height: auto;
         border-radius: 0;
     }
 
-    .hotels .list{
+    #hotels .list{
         height: auto;
     }
 
-    .hotels .card{
+    #hotels .card{
         margin-bottom: 24px;
     }
 
-    .hotels article{
+    #hotels article{
         height: 104px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .hotels .stars{
+    #hotels .stars{
         margin-bottom: 8px;
     }
 
-    .hotels > h3{
+    #hotels > h3{
         padding-top: 16px;
     }
 
@@ -482,7 +485,14 @@ li{
         height: 140px;
     }
 
+    #activity article{
+        display: table;
+        width: 100%;
+    }
+
     #activity h3{
+        display: table-cell;
+        vertical-align: middle;
         line-height: normal;
     }
 }
@@ -491,7 +501,7 @@ li{
 
 @media screen and (max-width: 768px){
 
-    #hebergement, #activity{
+    .hebergement, #activity{
         margin-bottom: 32px;
     }
 
@@ -531,6 +541,10 @@ li{
         display: none;
     }
 
+    .ville{
+        width: 80%;
+    }
+
     .search_mobile{
         display: inline;
     }
@@ -543,33 +557,33 @@ li{
 
     /* Partie hébergements */
 
-    #hebergement{
+    .hebergement{
         flex-direction: column-reverse;
         height: auto;
         padding: 0;
     }
 
-    .hotels, .popular{
+    #hotels, .popular{
         width: 100%;
         border-radius: 0;
         padding: 20px 6%;
     }
 
-    .hotels{
+    #hotels{
         background-color: white;
     }
 
-    .hotels .list{
+    #hotels .list{
         flex-flow: column nowrap;
         height: auto;
     }
 
-    .hotels .card{
+    #hotels .card{
         width: 100%;
         margin-bottom: 24px;
     }
 
-    .hotels > h3{
+    #hotels > h3{
         padding-top: 20px;
     }
 

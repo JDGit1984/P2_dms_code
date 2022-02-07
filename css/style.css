@@ -449,12 +449,14 @@ li{
         height: 480px;
     }
 
-    #activity .list:nth-child(1){
+    #activity .list > :nth-child(1){
         order: -1;
+        background-color: #DEEBFF;
     }
 
-    #activity .list :nth-child(4){
+    #activity .list > :nth-child(4){
         order:-1;
+        background-color: #DEEBFF;
     }
 
     #activity .list :nth-child(3){

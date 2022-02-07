@@ -378,6 +378,8 @@ li{
 
 @media screen and (max-width: 992px) and (min-width: 769px){
 
+    /* Partie hébergements */
+
     .hebergement{
         padding: 0;
         height: auto;
@@ -414,6 +416,8 @@ li{
         padding-top: 16px;
     }
 
+    /* Partie "Les plus populaires */
+
     .popular{
         width: 100%;
         height: auto;
@@ -444,6 +448,8 @@ li{
     .popular article{
         padding: 0 8%;
     }
+
+    /* Partie activités */
 
     #activity .list{
         height: 480px;
@@ -589,6 +595,8 @@ li{
         padding-top: 20px;
     }
 
+    /* Partie "Les plus populaires" */
+
     .popular .list{
         height: auto;
     }
@@ -596,6 +604,8 @@ li{
     .popular .card{
         margin-bottom: 24px;
     }
+
+    /* Partie activités */
 
     #activity .list{
         height: auto;

@@ -134,6 +134,12 @@ i.fas.fa-map-marker-alt {
     border-style: solid;
 }
 
+.ville:focus{   /* comportement de la barre de recherche quand elle est sélectionnée */
+    outline: none;
+    font-weight: bold;
+    border-color: #0065FC;
+}
+
 /* Filtres */
 
 .filters{

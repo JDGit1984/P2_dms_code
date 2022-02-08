@@ -384,6 +384,12 @@ li{
 
 @media screen and (max-width: 992px) and (min-width: 769px){
 
+    /* Filtres */
+
+    .filter_block{
+        margin-bottom: 16px;
+    }
+
     /* Partie hébergements */
 
     .hebergement{

@@ -497,10 +497,6 @@ li{
         width: 30%;
     }
 
-    .minor.activ_card{
-        width: 30%;
-    }
-
     .focus, .major, .minor{
         height: 140px;
     }
